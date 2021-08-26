@@ -54,4 +54,3 @@ class wordcloud1():
             wordcloud = WordCloud(stopwords = stopwords, background_color='black', width= 3200, height=1600).generate(self.data)
 
         return wordcloud.to_file('tmp/wordcloud.png')
-
