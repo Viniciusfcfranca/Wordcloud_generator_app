@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste </title>
+    </head>
+    <body>
+        <h2 style="text-align: center;"><strong>Wordcloud generator</strong> <span style="color: #0000ff;">-</span> Vinicius Fellype</h2>
+        <p style="text-align: center;">Text visualization</p>
+        <p style="text-align: center;">&nbsp;</p>
+        <p style="text-align: center;">&nbsp;</p>
+        <h1 style="text-align: center;">Wordcloud Generator<span style="color: #0000ff;">.</span></h1>
+
+        <div class="login">
+            
+        <form action="{{url_for('predict')}}" method='POST'>
+        <h1 style="text-align: center;">.<input type="text" name ="x1" placeholder = "Type your text here" required="required" />.</h1>
+        <h1 style="text-align: center;">.<input type="text" name ="x2" placeholder = "Type the language of your text here (english or portuguese)" required="required" />.</h1>
+        <h1 style="text-align: center;"><button type= "submit" class= "btn btn-primary btn-block btn-large">Generate wordcloud</button></h1>
+        </form>
+
+        <script type="text/javascript">
+            function showImage(){
+                document.getElementById('loadingImage').style.visibility="visible";
+            }
+        </script>
+        <h1 style="text-align: center;"><input type="button" value="Click to see result" onclick="showImage();"/></h1>
+        <center><img id="loadingImage" src="data:image/png;base64,{{ img_data }}" style="visibility:hidden;" width="800" height="400" /></center>
+       
+    </body>
+</html>
