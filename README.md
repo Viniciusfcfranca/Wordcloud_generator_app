@@ -1,15 +1,17 @@
-# Wordcloud_generator_app
-In this repository you're going to have access to the notebooks used to develop an app that generates worclouds since the texts inputed are in english or portuguese
+# Wordcloud Generator for texts in English and Portuguese
 
+### This Project is finished, for test it you have to download the folder of this repository and execute the command ‘Python app.py” in your command prompt on the directory of the app. 
 
-# Introduction
-Wordclouds are graps that show us the most frequent words in a text what can give us a bunch of insights about the text, so with this motivation, this app aims to give us a simple
-but valuable tool to have simple wordclouds about all texts we want since they'd been written in english or portuguese. Other languages aren't going to work in this app.
+In this Project we aimed to make a simple but usable app to generate wordclouds from texts in both languages, Portuguese and English to provide us insights by a visual analysis of the most frequent words in the texts you want to analyze. 
 
-# Instructions
-At first, you have to provide your text to the app in the space given to type the text, after that you're going to type the language of the text in the box to set the language,
-next you'll click in the box called "Generate wordcloud" so your wordcloud will be generated based on the words present in your text and wait the page load, so than you click 
-in the box "click to see result" after the wordcloud be generated to your wordcloud appear in your screen.
+The whole part of generate the wordcloud was performed in the class ‘biblioteca1.py’ Where the text and its language is given and has some words removed according to the language, which these words are called ‘stopwords’ that are words with no significant meaning to allow us to have some insight about the text by looking for them.
+
+## Routes.
+
+/type_your_text: (box "Type your text") This box is Where you input the text that you want to make the wordcloud
+/type_the_language_of_your_text: (box "Type the language of your text") It is the space where you should define the language of your text to generate the wordcloud. Only the languages English and Portuguese are available in this app.
+/generate_wordcloud: (button "Generate wordcloud") This is the botton you should click after had given the text and defined the its language, it is where the app is going to generate the wordcloud. It may take a few seconds to generate. 
+/click_to_see_result: (button "click to see result") You should press this button after clicked in generate wordcloud and the page of the app had actualized so the plot of the inputted text’s worcloud will be visible on the screen of your computer. 
 
 # About the author
 Vinícius Fellype is a Brazilian Fishing Engineer who focused your researches in the biological interactions and ecomorphology of the early life stages of fishe inhabitings of the 
