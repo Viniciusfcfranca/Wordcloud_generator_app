@@ -9,8 +9,11 @@ The whole part of generate the wordcloud was performed in the class ‘bibliotec
 ## Routes.
 
 /type_your_text: (box "Type your text") This box is Where you input the text that you want to make the wordcloud
+
 /type_the_language_of_your_text: (box "Type the language of your text") It is the space where you should define the language of your text to generate the wordcloud. Only the languages English and Portuguese are available in this app.
+
 /generate_wordcloud: (button "Generate wordcloud") This is the botton you should click after had given the text and defined the its language, it is where the app is going to generate the wordcloud. It may take a few seconds to generate. 
+
 /click_to_see_result: (button "click to see result") You should press this button after clicked in generate wordcloud and the page of the app had actualized so the plot of the inputted text’s worcloud will be visible on the screen of your computer. 
 
 # About the author
